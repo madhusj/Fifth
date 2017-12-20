@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MovieApp Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../js/movie.js"></script>
+   
+    <link href="../css/style.css" rel="stylesheet"></link>
+   
+  
+</head>
+
+<body>
+<marquee><b>Click below the button to add your favourite movies and watch it any time</b></marquee>
+<center><h1>Watch movies at online free</h1></center
+    <a href="index.html"><button>logout</button></a>
+    <center>
+        <form method="post" action="" onsubmit="findMovie(event)">
+        <input type="text" placeholder="Enter the movie name" required id="moviename" />        
+        <button type='submit' value="Search Movies">Search Movies</button>
+        <button value="Favourites" onclick="favouritedisplay()">Show Favourites</button>
+        </form>
+    </center>
+    <center>
+        <div id="heading">
+                <table id="movies" border="1">
+                    <thead>  
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+         </div>
+    </center>
+
+</body>
+
+</html>
